@@ -24,15 +24,15 @@ const itemsSchema = new mongoose.Schema ({
 const Item = mongoose.model("Item", itemsSchema)
 
 const item1 = new Item ({
-  name: "Sculacciare i nazi nascosti",
+  name: "Buy groceries",
 })
 
 const item2 = new Item ({
-  name: "Mettere novichok nelle mutande",
+  name: "Take out the trash",
 })
 
 const item3 = new Item ({
-  name: "Cena romantica con Xi"
+  name: "Final touch to my new app"
 })
 
 const defaultItems = [item1, item2, item3]
