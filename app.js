@@ -5,13 +5,15 @@ const _ = require("lodash")
 
 const app = express();
 
+mongoose.set('strictQuery', true);
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect('mongodb+srv://admin-flavio:test1234@cluster0.iz7u91h.mongodb.net/todolistDB'/* , {useNewUrlParser: true} */);
+mongoose.connect('mongodb+srv://admin-flavio:test1234@cluster0.iz7u91h.mongodb.net/todolistDB', {useNewUrlParser: true, useUnifiedTopology: true,});
 
 // mongoose.connect('mongodb://127.0.0.1:27017/todolistDB'/* , {useNewUrlParser: true} */);
 
