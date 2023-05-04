@@ -132,9 +132,7 @@ app.post("/delete", (req, res) => {
 })
 
 
-/* app.get("/work", function(req,res){
-  res.render("list", {listTitle: "Work List", newListItems: workItems});
-}); */
+
 
 app.get("/about", function(req, res){
   res.render("about");
